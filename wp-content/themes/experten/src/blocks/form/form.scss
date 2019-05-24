@@ -1,0 +1,71 @@
+.calc-form-modal,
+.contact-us-modal-form {
+
+  form {
+    max-width: 1142px;
+    width: 100%;
+    margin:  auto;
+    padding-top: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width:1024px) {
+      padding-top: 20px;
+    }
+
+    p {
+      width: 47%;
+      margin-bottom: 47px;
+
+      @media (max-width:600px) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  input {
+    width: 100%;
+  }
+
+
+}
+
+.contact-us-modal-form form {
+  justify-content: start;
+
+  p {
+    margin: 0 1.5% 50px;
+
+    @media (max-width:600px) {
+      margin-bottom: 27px;
+
+    }
+  }
+
+  p:nth-child(3) {
+    width: 14%;
+
+    @media (max-width:600px) {
+      width: 29%;
+
+    }
+  }
+  p:nth-child(4) {
+    width: 30%;
+
+    @media (max-width:600px) {
+      width: 65%;
+
+    }
+  }
+}
+
+
+.calc-form-modal form {
+
+  p:nth-child(6) {
+   display: none;
+  }
+
+}

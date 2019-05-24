@@ -1,0 +1,135 @@
+h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: $dark;
+  margin-bottom: 5px;
+
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 90px;
+  color: $dark;
+  margin-bottom: 5px;
+  font-family: 'abril_fatfaceregular', serif;
+  letter-spacing: 1.4px;
+
+  @media (max-width: 1119px) {
+    font-size: 43px;
+    line-height: 49px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.1px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 400;
+  @media (max-width: 1119px) {
+    font-size: 25px;
+    line-height: 29px;
+  }
+}
+
+h4 {
+  
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  color: $dark;
+  margin-bottom: 5px;
+  @media (max-width: 1024px) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+b {
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+
+  
+  li {
+    
+  }
+}
+
+ol {
+  
+  li {
+    
+  }
+}
+
+table {
+  
+}
+
+tr {
+  
+}
+
+th {
+  
+}
+
+td {
+  
+}
+
+a {
+  
+}
+
+input {
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+}
+
+img {
+  
+}

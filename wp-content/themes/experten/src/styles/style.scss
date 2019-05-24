@@ -1,0 +1,42 @@
+@import 'bootstrap';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap');
+
+
+/* Plugins */
+
+@import 'plugins/swiper.min';
+@import 'plugins/font-awesome.min';
+@import 'plugins/roundslider.min';
+@import 'plugins/plugins-rewrite';
+
+
+/* Global styles */
+@import 'global/global-fonts';
+@import 'global/global-typo';
+@import 'global/global-scaffolding';
+
+
+/* Blocks */
+
+@import './src/blocks/header/header';
+@import './src/blocks/pre-header/pre-header';
+@import './src/blocks/section-head/section-head';
+@import './src/blocks/list-title/list-title';
+@import './src/blocks/offer/offer';
+@import './src/blocks/case/case';
+@import './src/blocks/intro/intro';
+@import './src/blocks/button/button';
+@import './src/blocks/costs/costs';
+@import './src/blocks/contact-us/contact-us';
+@import './src/blocks/mail-us/mail-us';
+
+@import './src/blocks/item/item';
+@import './src/blocks/gallery/gallery';
+@import './src/blocks/review/review';
+@import './src/blocks/slider/slider';
+@import './src/blocks/form/form';
+@import './src/blocks/input/input';
+@import './src/blocks/footer/footer';
+@import './src/blocks/socials/socials';
+@import './src/blocks/logo/logo';

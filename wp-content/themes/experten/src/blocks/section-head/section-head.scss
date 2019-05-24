@@ -1,0 +1,25 @@
+.section-head {
+
+  &__title {
+    //line-height: 62px;
+  }
+
+  &__sub-title {
+    font-family: 'source_sans_prosemibold', serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @media (max-width:1024px) {
+      font-size: 14px;
+      line-height: 20px;
+      word-break: break-all;
+    }
+
+
+  }
+
+}

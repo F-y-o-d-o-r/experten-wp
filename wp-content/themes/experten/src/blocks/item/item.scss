@@ -1,0 +1,24 @@
+.item {
+
+
+  &:hover {
+
+    @include transition;
+  }
+
+  &__picture {
+
+  }
+  
+  &__content {
+
+  }
+  
+  &__content-top {
+
+  }
+  
+  &__date {
+
+  }
+}

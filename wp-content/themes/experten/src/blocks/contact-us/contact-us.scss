@@ -1,0 +1,52 @@
+.contact-us{
+  padding: 172px 0 206px;
+  text-align: center;
+  background: url("../img/contact-us-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  @media(max-width:768px) {
+    padding: 96px 0 100px;
+  }
+
+  .section-head {
+    padding-bottom: 66px;
+
+    @media(max-width:768px) {
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      color: #fefefe;
+    }
+  }
+
+  form {
+    max-width: 1142px;
+    width: 100%;
+    margin:  auto;
+    padding-top: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media(max-width:600px) {
+      padding-top: 40px;
+    }
+    p {
+      width: 48%;
+      margin-bottom: 47px;
+
+      @media(max-width:600px) {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+
+    }
+  }
+
+  .btn-ab-submit {
+    @media(max-width:600px) {
+      margin-top:60px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.list-title {
+  position: relative;
+  font-family: 'source_sans_probold_italic', serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 35px;
+  z-index: 2;
+  letter-spacing: -0.5px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 116px;
+    height: 14px;
+    background: url("../img/list-title-after.png") center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @media (max-width:768px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.list-description {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $dark;
+  letter-spacing: -0.2px;
+
+  @media (max-width:768px) {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+}

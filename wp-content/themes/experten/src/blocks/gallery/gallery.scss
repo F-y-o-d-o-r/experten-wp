@@ -1,0 +1,136 @@
+.gallery {
+  position: relative;
+  z-index: 2;
+
+  &__text {
+    color: $light;
+    opacity: 0.7;
+
+    @media (max-width:600px) {
+      margin-bottom: 20px;
+      line-height: 25px;
+      font-size: 15px;
+    }
+  }
+}
+
+.gallery-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -2px;
+  background: url('../img/gallery-bg.jpg') no-repeat;
+  background-size: 100% 58%;
+  background-position: bottom center;
+}
+
+.gallery-list__top,
+.gallery-list__bottom {
+  position: relative;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
+  @media (max-width:600px) {
+    justify-content: space-between;
+  }
+
+}
+.gallery-list__top {
+  left: -100%;
+}
+.gallery-list__bottom {
+  right: -100%;
+}
+
+.animate__top {
+  animation: slide 0.5s forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+.animate__bottom {
+  animation: slide-bt 0.5s forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes slide-bt {
+  100% { right: 0; }
+}
+
+.gallery-list__bottom {
+  //background: url("../img/gallery-bg.jpg")  center no-repeat;
+  //background-size: cover;
+}
+
+
+.gallery-list__item {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  margin: 0 25px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width:1024px) {
+    padding-left: 0px;
+  }
+
+  @media (max-width:600px) {
+    margin: 0;
+    width: 47%;
+  }
+
+}
+.gallery-list__b-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 20%;
+  margin: 0 25px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width:1024px) {
+    padding-left: 0px;
+  }
+
+  @media (max-width:600px) {
+    margin: 0;
+    width: 47%;
+  }
+}
+
+.gallery-list_b_text {
+  padding-top: 45px;
+  color: $light;
+  letter-spacing: -1px;
+}
+
+.gallery-list__item:first-child,
+.gallery-list__b-item:first-child {
+  @media (max-width:1024px) {
+    display: none;
+  }
+}
+
+.gallery-list__item:first-child,
+.gallery-list__b-item:first-child {
+  @media (max-width:1024px) {
+    display: none;
+  }
+}
+.gallery-list__item:nth-child(4),
+.gallery-list__item:nth-child(5),
+.gallery-list__b-item:nth-child(4),
+.gallery-list__b-item:nth-child(5) {
+  @media (max-width:600px) {
+    display: none;
+  }
+}

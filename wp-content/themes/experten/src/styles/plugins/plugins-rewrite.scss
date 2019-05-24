@@ -1,0 +1,228 @@
+.rs-control {
+  margin: auto;
+}
+
+.rs-handle {
+  background: url("../img/calc-icone.png") center no-repeat!important;
+  background-size: cover;
+}
+.rs-border  {
+  border-color: transparent;
+}
+
+.rs-path-color {
+  color: #ffffff!important;
+}
+.rs-range-color  {
+  background-color: #ffffff!important;
+}
+
+.rs-control .rs-bg-color  {
+   background: url("../img/costen-bg.png")!important;
+  border: none!important;
+  outline: none!important;
+}
+.top .rs-tooltip {
+  top: 27% !important;
+}
+.bottom .rs-tooltip {
+  top: auto;
+  bottom: 30% !important;
+}
+
+.rs-tooltip {
+  color: $primary;
+  font-family: $font-family-sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 22px;
+
+  p {
+    font-size: 16px;
+    line-height: 18px;
+    color: $light;
+  }
+}
+
+.rs-tooltip.hover,
+.rs-tooltip.edit:hover {
+  border: none;
+}
+
+
+.bottom .rs-tooltip {
+  margin-left: -95px!important;
+
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 84px;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+.swiper-button-prev {
+  background: none;
+  left: 92px;
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    top: 13px;
+    left: -80px;
+    background-color: #000000;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    width: 94%;
+    height: 11px;
+    bottom: -4px;
+    background-color: #ffdf41;
+    z-index: -1;
+  }
+
+}
+.swiper-button-next {
+  background: none;
+  right: 92px;
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    top: 13px;
+    right: -80px;
+    background-color: #000000;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 82%;
+    height: 11px;
+    left: 8px;
+    bottom: -3px;
+    background-color: #ffdf41;
+    z-index: -1;
+  }
+}
+
+.calc-form-modal {
+  background-color:rgba(0, 0, 0, 0.5) ;
+
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.68);
+}
+
+.modal.fade .modal-dialog {
+  max-width: 1144px!important;
+  width: 100%;
+  margin: 8rem auto!important;
+
+  @media (max-width: 768px) {
+    margin: auto!important;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .close {
+    position: relative;
+    right: -93px;
+    top: 78px;
+    width: 34px;
+    height: 34px;
+    align-self: flex-end;
+    background: url("../img/cancel.png") center no-repeat;
+
+    @media (max-width: 768px) {
+      right: 0;
+      top: 0;
+    }
+
+  }
+}
+
+
+.modal-content {
+  border: none;
+  background: transparent;
+
+}
+
+
+
+.modal-header {
+  border: none;
+
+}
+.modal-title {
+  margin: auto;
+  text-align: center;
+  color: #fefefe;
+  font-family: 'abril_fatfaceregular', serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: 1.4px;
+
+
+  @media (max-width:1024px) {
+    line-height: 40px;
+    font-size: 35px;
+  }
+}
+.modal-open .modal {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.68);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @media (max-width:1024px) {
+    display: none;
+  }
+}
+
+.swiper-wrappe {
+  height: auto!important;
+
+}
+.swiper-slide {
+  height: auto!important;
+}
+
+.swiper-pagination {
+  @media (min-width:1025px) {
+    display: none;
+  }
+}
+
+.review .swiper-pagination-bullet {
+   width: 15px;
+  height: 15px;
+  background-color: #e6e6e6;
+}
+
+.review span.swiper-pagination-bullet-active {
+  background-color: $primary;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 12px;
+}

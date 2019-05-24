@@ -1,0 +1,38 @@
+.pre-header {
+  background-color: #f5f5f5;
+  .container {
+    width: 1434px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 1434px;
+    max-width: 100%;
+    margin: auto;
+
+    padding: 0 15px;
+
+    &__item {
+      padding: 15px 37px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+    }
+
+    &__link {
+      opacity: 0.8;
+      color: #000000;
+      font-family: $font-family-sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+
+  @media (max-width:1024px) {
+    display: none;
+  }
+}

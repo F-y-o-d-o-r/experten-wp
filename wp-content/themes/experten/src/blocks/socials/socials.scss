@@ -1,0 +1,22 @@
+.socials {
+  
+  &__item {
+
+
+    &:hover {
+
+    }
+
+    @include media-breakpoint-down(xs) {
+
+    }
+    
+    &--fb {
+
+    }
+    
+    &--tw {
+
+    }
+  }
+}
