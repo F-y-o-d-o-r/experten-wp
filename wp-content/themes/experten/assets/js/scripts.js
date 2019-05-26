@@ -8261,7 +8261,6 @@ $(window).scroll(function() {
 
 
 
-
 $( document ).ready(function() {
     var swiper = new Swiper('.review-list__wrap', {
         slidesPerView: 1,
@@ -8288,4 +8287,5 @@ $( document ).ready(function() {
     });
 
 })
+
 
