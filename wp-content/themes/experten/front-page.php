@@ -10,7 +10,7 @@ $subtitle_block_1 = get_field('subtitle_block_1');
 $text__block_1 = get_field('text__block_1');
 
 $titel_block_2 = get_field('titel_block_2');
-$subtitle_block_2 = get_field('subtitle_block_2');
+$subtitle_block_Partner2 = get_field('subtitle_block_2');
 $text__block_2 = get_field('text__block_2');
 $list_of_elements = get_field('list_of_elements');
 
