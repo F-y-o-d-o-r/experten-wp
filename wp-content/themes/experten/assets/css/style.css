@@ -13146,11 +13146,11 @@ input[type="submit"] {
       font-weight: 700;
       line-height: 1px;
  } }
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     .btn-ab-submit {
       width: 255px;
       height: 53px;
-      margin: 0 auto;
+      margin: 0;
       background: #ffdf41;
       color: #000000;
       padding-left: 5px;
@@ -13309,7 +13309,7 @@ input[type="submit"] {
       margin-bottom: 47px; }
     .contact-us form p:last-of-type {
       display: flex;
-      margin-top: -45px;
+      margin-top: -48px;
       width: 48%;
       margin-bottom: 47px; }
     @media (max-width: 1024px) {
@@ -13318,6 +13318,11 @@ input[type="submit"] {
       }
     }
     @media (max-width: 1024px) {
+      .contact-us form p:last-of-type {
+        display: flex;
+      }
+    }
+@media (max-width: 600px) {
       .contact-us form p:last-of-type {
         display: block;
       }
@@ -13328,7 +13333,7 @@ input[type="submit"] {
           margin-bottom: 0px; } }
   @media (max-width: 600px) {
     .contact-us .btn-ab-submit {
-      margin-top: 60px; } }
+      margin-top: 30px; } }
 
 .mail-us {
   padding: 190px 0 170px; }
