@@ -13136,7 +13136,17 @@ input[type="submit"] {
   background-position: 0 95%; }
   .btn-ab-submit--dark {
     color: #000000; }
-  @media (max-width: 600px) {
+  @media (max-width:1024px) {
+    .btn-ab-submit {
+      color: #000000;
+      background-position: 0 0;
+      height: 38px;
+      padding-left: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1px;
+ } }
+@media (max-width: 600px) {
     .btn-ab-submit {
       width: 255px;
       height: 53px;
@@ -13297,6 +13307,21 @@ input[type="submit"] {
     .contact-us form p {
       width: 48%;
       margin-bottom: 47px; }
+    .contact-us form p:last-of-type {
+      display: flex;
+      margin-top: -45px;
+      width: 48%;
+      margin-bottom: 47px; }
+    @media (max-width: 1024px) {
+      .contact-us form p:last-of-type {
+        margin-top: 0px;
+      }
+    }
+    @media (max-width: 1024px) {
+      .contact-us form p:last-of-type {
+        display: block;
+      }
+    }
       @media (max-width: 600px) {
         .contact-us form p {
           width: 100%;
