@@ -8285,7 +8285,8 @@ $( document ).ready(function() {
         }
 
     });
-
-})
-
-
+  $( '#wpcf7-f92-o2 input[type="checkbox"] + span' ).on( "click", function() {
+    var checkbox = $( '#wpcf7-f92-o2 input[type="checkbox"]' );
+    checkbox.prop('checked', !checkbox.prop('checked'));
+  });
+});
