@@ -12211,7 +12211,7 @@ div.rs-block {
 }
 .select2-container.select2-container--bootstrap4.select2-container--open {
   width: 400px!important;
-  /*margin-top: -25px;*/
+  margin-top: -20px!important;
 }
 .select2-container.select2-container--bootstrap4.select2-container--open .select2-selection__arrow {
   display: none;
