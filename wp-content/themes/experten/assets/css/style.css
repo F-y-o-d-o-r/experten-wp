@@ -12454,7 +12454,7 @@ input[type="submit"] {
     width: 204px;
     height: 106%;
     top: 0px;
-    left: 7%;
+    left: 2%;
     z-index: -1;
     background: url("../img/BU-Experten.png") center no-repeat;
     -webkit-background-size: 100% 100%;
@@ -12809,6 +12809,14 @@ input[type="submit"] {
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; } }
+.case .case-list__item:nth-child(4) p {
+    padding-left: 50px;
+}
+@media (max-width: 1024px) {
+  .case .case-list__item:nth-child(4) p {
+    padding-left: 0px;
+  }
+}
     .case .case-list__item {
       width: 26%; }
       @media (max-width: 1024px) {
@@ -13802,19 +13810,56 @@ input[type="checkbox"] {
   .review-list__item {
     height: auto; }
   .review-list__img {
-    max-width: 116px;
+    max-width: 180px;
     margin: auto;
-    height: 117px;
-    overflow: hidden;
+    height: 180px;
+    /*overflow: hidden;*/
     position: relative;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+  z-index: 1;}
+.review-list__img:after {
+  content: '';
+  background: url("../img/goldbig.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 40px;
+  width: 260px;
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+  z-index: -1;
+}
     .review-list__img img {
       -o-object-fit: cover;
       object-fit: cover;
       vertical-align: middle;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+    z-index: 1;}
+@media (max-width: 1024px) {
+  .review-list__img {
+    max-width: 115px;
+    height: 115px;}
+  .review-list__img:after {
+    content: '';
+    background: url("../img/goldsmall.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 25px;
+    width: 160px;
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    z-index: -1;
+  }
+}
+span.wpcf7-not-valid-tip {
+  text-align: left;
+}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
+  display: none!important;
+}
   .review-list__name {
     margin-top: 33px;
     padding-bottom: 0;
