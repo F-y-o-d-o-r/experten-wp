@@ -8277,8 +8277,8 @@ $( document ).ready(function() {
                 nextEl: '',
                 prevEl: '',
                 navigation: {
-                    nextEl: '',
-                    prevEl: '',
+                  prevEl: '',
+                  nextEl: '',
                 },
             },
 
@@ -8286,8 +8286,20 @@ $( document ).ready(function() {
 
     });
   $( '#wpcf7-f92-o2 input[type="checkbox"] + span' ).on( "click", function() {
-    var checkbox = $( '#wpcf7-f92-o2 input[type="checkbox"]' );
-    checkbox.prop('checked', !checkbox.prop('checked'));
+    // var checkbox = $( '#wpcf7-f92-o2 input[type="checkbox"]' );
+    // checkbox.prop('checked', !checkbox.prop('checked'));
+  });
+  $( '.label-text' ).on( "click", function(e) {
+    var checkbox = $(e.target).closest('.checkbox-label').find('input[type="checkbox"]')[0];
+    console.log($(e.target).closest('.checkbox-label').hasClass());
+    // checkbox.prop('checked', !checkbox.prop('checked'));
+    if($(e.target).closest('.checkbox-label').hasClass('checked')){
+      $(e.target).closest('.checkbox-label').removeClass('checked');
+      console.log(1)
+    } else {
+      $(e.target).closest('.checkbox-label').addClass('checked');
+      console.log(2)
+    }
   });
 });
 
