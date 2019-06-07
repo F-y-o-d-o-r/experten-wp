@@ -364,8 +364,8 @@ get_header();
                 </div>
 
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"><?php _e('der vorige')?></div>
-                <div class="swiper-button-prev"><?php _e('der nächste')?></div>
+                <div class="swiper-button-next"><?php _e('weiter')?></div>
+                <div class="swiper-button-prev"><?php _e('zurück')?></div>
 
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -473,22 +473,22 @@ get_header();
                                     <?php
                                 endif;
                             endforeach; ?>
-                            <li>
-                                <?php if($sozial) {?>
-                                    <ul class="social">
-                                        <?php
-                                        foreach ($sozial as $socItem) {?>
-                                            <li class="social__item">
-                                                <a href="<?php echo $socItem['soziale_bindung']?>" class="social__link"><i class="<?php echo $socItem['soziale_ikone']?> " aria-hidden="true"></i></a>
-                                            </li>
-                                            <?php
-                                        }
-                                        ?>
-                                    </ul>
-                                    <?php
-                                } ?>
-
-                            </li>
+<!--                            <li>-->
+<!--                                --><?php //if($sozial) {?>
+<!--                                    <ul class="social">-->
+<!--                                        --><?php
+//                                        foreach ($sozial as $socItem) {?>
+<!--                                            <li class="social__item">-->
+<!--                                                <a href="--><?php //echo $socItem['soziale_bindung']?><!--" class="social__link"><i class="--><?php //echo $socItem['soziale_ikone']?><!-- " aria-hidden="true"></i></a>-->
+<!--                                            </li>-->
+<!--                                            --><?php
+//                                        }
+//                                        ?>
+<!--                                    </ul>-->
+<!--                                    --><?php
+//                                } ?>
+<!---->
+<!--                            </li>-->
                         </ul>
                         <?php endif; ?>
                         <?php if ($map) :?>

@@ -12454,7 +12454,7 @@ input[type="submit"] {
     width: 204px;
     height: 106%;
     top: 0px;
-    left: 2%;
+    left: 7%;
     z-index: -1;
     background: url("../img/BU-Experten.png") center no-repeat;
     -webkit-background-size: 100% 100%;
@@ -12810,7 +12810,7 @@ input[type="submit"] {
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; } }
 .case .case-list__item:nth-child(4) p {
-    padding-left: 50px;
+    /*padding-left: 50px;*/
 }
 @media (max-width: 1024px) {
   .case .case-list__item:nth-child(4) p {
@@ -12955,9 +12955,9 @@ input[type="submit"] {
         /*  height: 37px;*/
         /*  background-color: #ffdf41;*/
         /*  opacity: 0.41; }*/
-        .case .case-list__item:nth-child(4) .case-list__text .color {
-          background-color: #ffdf41;
-        }
+        /*.case .case-list__item:nth-child(4) .case-list__text .color {*/
+        /*  background-color: #ffdf41;*/
+        /*}*/
         @media (min-width: 1700px) {
           .case .case-list__item:nth-child(4) .case-list__text {
             padding-right: 163px; } }
@@ -13179,7 +13179,7 @@ input[type="checkbox"] {
     width: 88%; }
 
 .intro.bg-grey:before {
-  top: 21%;
+  top: 12%;
   left: 6%;
   width: 88%; }
 
