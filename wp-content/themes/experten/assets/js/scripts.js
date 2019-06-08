@@ -8213,18 +8213,21 @@ $( document ).ready(function() {
     }
 
     $("#cost-btn").click(function () {
-        var select =  $( '[name="calculate-form-menu"]');
+        // var select =  $( '[name="calculate-form-menu"]');
+        var select =  $( '#select2-dropdown-container').text();
         var age = $('[name="round-top"]');
         var summe = $('[name="round-bot"]');
 
         //console.log(select['1']['value'] )
 
-        // $('#range-age').attr( "value", age['0']['defaultValue'] ),
-        // $('#range-summe').attr( "value", summe['0']['defaultValue'] ),
-        // $('#select-prof').attr( "value", select['1']['value'] )
+        $('#range-age').attr( "value", age.val()),
+        $('#range-summe').attr( "value", summe.val())
+            if(select){
+              $('#select-prof').attr( "value", select )
+            }
 
 
-       console.log('select -->',select.val(), 'age-->', age.val(), 'price-->', summe.val() )
+       console.log('select -->',select, 'age-->', age.val(), 'price-->', summe.val() )
 
     })
 
@@ -8243,13 +8246,37 @@ $( document ).ready(function() {
 
 })
 
+
+// form to close after send
+setTimeout(function() {
+  var wpcf7Elm = document.querySelector( '#wpcf7-f93-o4' );
+  wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+    $('.checkbox-label').removeClass('checked');
+    $('input[type="checkbox"]').prop('checked', false);
+    $('button.close').click();
+  }, false );
+  var wpcf7Elm1 = document.querySelector( '#wpcf7-f107-o5' );
+  wpcf7Elm1.addEventListener( 'wpcf7mailsent', function( event ) {
+    $('.checkbox-label').removeClass('checked');
+    $('input[type="checkbox"]').prop('checked', false);
+    $('button.close').click();
+  }, false );
+  var wpcf7Elm2 = document.querySelector( '#wpcf7-f92-o2' );
+  wpcf7Elm2.addEventListener( 'wpcf7mailsent', function( event ) {
+    $('.checkbox-label').removeClass('checked');
+    $('input[type="checkbox"]').prop('checked', false);
+  }, false );
+}, 1000);
+
+
+
 $(window).scroll(function() {
 
     var imagePos = $('.gallery-list__top').offset().top;
     var topOfWindow = $(window).scrollTop();
 
-    console.log('img pos',imagePos);
-    console.log('screen pos',topOfWindow);
+    // console.log('img pos',imagePos);
+    // console.log('screen pos',topOfWindow);
 
     if (imagePos < topOfWindow+500) {
         $('.gallery-list__top').addClass("animate__top");
@@ -8288,20 +8315,12 @@ $( document ).ready(function() {
         }
 
     });
-  $( '#wpcf7-f92-o2 input[type="checkbox"] + span' ).on( "click", function() {
-    // var checkbox = $( '#wpcf7-f92-o2 input[type="checkbox"]' );
-    // checkbox.prop('checked', !checkbox.prop('checked'));
-  });
   $( '.label-text' ).on( "click", function(e) {
     var checkbox = $(e.target).closest('.checkbox-label').find('input[type="checkbox"]')[0];
-    console.log($(e.target).closest('.checkbox-label').hasClass());
-    // checkbox.prop('checked', !checkbox.prop('checked'));
     if($(e.target).closest('.checkbox-label').hasClass('checked')){
       $(e.target).closest('.checkbox-label').removeClass('checked');
-      console.log(1)
     } else {
       $(e.target).closest('.checkbox-label').addClass('checked');
-      console.log(2)
     }
   });
 });

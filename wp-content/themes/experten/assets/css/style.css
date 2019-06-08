@@ -13864,6 +13864,9 @@ span.wpcf7-not-valid-tip {
 .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
   display: none!important;
 }
+div.wpcf7-mail-sent-ok {
+  display: none!important;
+}
   .review-list__name {
     margin-top: 33px;
     padding-bottom: 0;
