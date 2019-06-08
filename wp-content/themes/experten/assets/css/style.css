@@ -13293,7 +13293,10 @@ input[type="checkbox"] {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  padding: 100px 0 0; }
+  padding: 100px 0 0;
+  width: 1370px;
+  box-sizing: border-box;
+}
   @media (max-width: 1024px) {
     .intro-body {
       padding-left: 15px;
@@ -13303,7 +13306,8 @@ input[type="checkbox"] {
       padding-top: 22px; } }
   .intro-body__content {
     width: 25%;
-    padding-left: 81px; }
+    /*padding-left: 81px;*/
+  }
     @media (max-width: 1024px) {
       .intro-body__content {
         width: 100%;

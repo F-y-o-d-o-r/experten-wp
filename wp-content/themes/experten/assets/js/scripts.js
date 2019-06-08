@@ -8183,6 +8183,9 @@ $( document ).ready(function() {
         handleSize: "+16",
         circleShape: "half-top",
         sliderType: "min-range",
+        min: "16",
+        max: "45",
+        step: "1",
 
         editableTooltip: false,
         mouseScrollAction: false,
@@ -8197,9 +8200,9 @@ $( document ).ready(function() {
         width: 2,
         handleSize: "+16",
         circleShape: "half-bottom",
-        max: "0",
-        min: "10000",
-        step: "1000",
+        max: "500",
+        min: "7000",
+        step: "500",
 
         editableTooltip: false,
         mouseScrollAction: false,
@@ -8216,12 +8219,12 @@ $( document ).ready(function() {
 
         //console.log(select['1']['value'] )
 
-        $('#range-age').attr( "value", age['0']['defaultValue'] ),
-        $('#range-summe').attr( "value", summe['0']['defaultValue'] ),
-        $('#select-prof').attr( "value", select['1']['value'] )
+        // $('#range-age').attr( "value", age['0']['defaultValue'] ),
+        // $('#range-summe').attr( "value", summe['0']['defaultValue'] ),
+        // $('#select-prof').attr( "value", select['1']['value'] )
 
 
-       // console.log('select -->',select, 'age-->', age, 'price-->', summe )
+       console.log('select -->',select.val(), 'age-->', age.val(), 'price-->', summe.val() )
 
     })
 
@@ -8310,7 +8313,7 @@ $(document).ready(function() {
     dropdownAutoWidth: true,
     theme: 'bootstrap4',
     minimumResultsForSearch: 3,
-    placeholder: "Select",
+    placeholder: "Ihr Beruf",
     selectOnBlur: true,
     tags: true
   });
