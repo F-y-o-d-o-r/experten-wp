@@ -35,8 +35,16 @@ $kontaktliste = get_field('kontaktliste', "option")
      ?>
      <header class="header">
          <div class="container border d-flex justify-content-between align-items-center">
-             <h1 class="logo"><a href="#"><?php echo get_bloginfo('name') ?></a></h1>
-             <a  href="#form" class="btn-link"><?php  echo __('Kontaktieren sie uns')?></a>
+             <h1 class="logo"><a href="/"><?php echo get_bloginfo('name') ?></a></h1>
+             <?php
+
+             if( is_front_page() ) {
+                 ?>
+
+                 <a href="#form" class="btn-link"><?php echo __('Kontaktieren sie uns') ?></a>
+                 <?php
+             }
+             ?>
          </div>
      </header>
 

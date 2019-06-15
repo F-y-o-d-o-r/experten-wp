@@ -13343,9 +13343,10 @@ input[type="checkbox"] {
         padding: 15px 0; } }
 
 .btn-primary {
+  position: relative;
   padding: 33px 5px;
-  background-color: #ffdf41;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #ffdf41!important;
   outline: none;
   color: #000000;
   font-family: 'source_sans_proregular', serif;
@@ -13354,7 +13355,51 @@ input[type="checkbox"] {
   line-height: 28px;
   font-style: italic;
   text-transform: uppercase;
-  letter-spacing: 2.2px; }
+  letter-spacing: 2.2px;
+  display: inline-block;
+  overflow: hidden;
+  transition: .2s ease-out;
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  z-index: 1;
+}
+.costs .btn-primary {
+  color: #fff;
+}
+.costs .btn-primary:hover {
+  color: #000;
+}
+.btn-primary:hover {
+  color: #fefefe;
+}
+.btn-primary:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffdf41;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+.btn-primary:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.btn-primary:active:before {
+  background-color: #AD8D32;
+}
+
+
+
   @media (max-width: 1024px) {
     .btn-primary {
       padding: 20px 0;
@@ -13381,7 +13426,13 @@ input[type="checkbox"] {
   border: none;
   outline: none;
   background: url("../img/input-bg.svg") center no-repeat;
-  background-position: 0 95%; }
+  background-position: 0 95%;
+  transition: 300ms ease-out;
+}
+.btn-ab-submit:hover {
+  background-position: 0 60%;
+  color: #000;
+}
   .btn-ab-submit--dark {
     color: #000000; }
   @media (max-width:1024px) {
@@ -13428,6 +13479,9 @@ input[type="checkbox"] {
     width: 1400px; }
   .costs__box {
     width: 34%; }
+.costs__box form > p {
+  /*line-height: unset;*/
+}
     @media (max-width: 1024px) {
       .costs__box {
         width: 100%;
@@ -14219,3 +14273,83 @@ span.wpcf7-list-item {
             background-size: cover; }
     .map-mob a img {
       display: none; }
+
+.impressum .container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.impressum .container .intro-head__text h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: 'source_sans_probold_italic', serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 35px;
+  z-index: 2;
+  letter-spacing: -0.5px;
+}
+.impressum .container .intro-head__text h3:after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 116px;
+  height: 14px;
+  background: url(../img/list-title-after.png) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+.impressum .container .section-head {
+  margin-top: 20px!important;
+}
+
+.impressum .container .intro-head__text {
+  padding-top: 0;
+}
+
+.impressum .container .intro-head__text p,
+.impressum .container .intro-head__text td,
+.impressum.datenschutz .container ul li {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.impressum.datenschutz .container .section-head {
+  margin-top: 30px!important;
+  margin-bottom: 30px;
+}
+
+.impressum.datenschutz .container .intro-head__text h4 {
+  font-weight: bold;
+}
+
+.move-left {
+  margin-left: 33px;
+}
+
+@media (max-width: 1025px) {
+  .move-left {
+    margin-left: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .move-left {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .move-left {
+    margin-left: 0px;
+  }
+}
