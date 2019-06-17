@@ -437,7 +437,7 @@ get_header();
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times</span>
+                    <span aria-hidden="true"></span>
                 </button>
                 <div class="modal-header">
                     <?php
@@ -459,7 +459,7 @@ get_header();
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times</span>
+                    <span aria-hidden="true"></span>
                 </button>
                 <div class="modal-header">
                     <?php
