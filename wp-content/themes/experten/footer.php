@@ -50,7 +50,7 @@ $footer_nav = get_field('footer_nav','option' );
                         <?php
                         foreach ($kontaktliste as $konItem):
                             if($konItem):?>
-                                <li class="contact-list__item"><a href="<?php echo $konItem['kontaktlink']?>" class="contact-list__link"><?php echo $konItem['kontakttext']?></a></li>
+                                <li class="contact-list__item"><a href="<?php echo $konItem['kontaktlink']?>" class="contact-list__link" target="_blank"><?php echo $konItem['kontakttext']?></a></li>
                             <?php
                             endif;
                         endforeach; ?>

@@ -12,7 +12,13 @@ $kontaktliste = get_field('kontaktliste', "option")
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <title>BU-experten</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body <?php body_class(); ?>>
@@ -24,7 +30,7 @@ $kontaktliste = get_field('kontaktliste', "option")
                   <?php
                   foreach ($kontaktliste as $konItem){
                       if($konItem){?>
-                          <li class="contact-list__item"><a href="<?php echo $konItem['kontaktlink']?>" class="contact-list__link"><?php echo $konItem['kontakttext']?></a></li>
+                          <li class="contact-list__item"><a href="<?php echo $konItem['kontaktlink']?>" class="contact-list__link" target="_blank"><?php echo $konItem['kontakttext']?></a></li>
                           <?php
                       }
                   } ?>
