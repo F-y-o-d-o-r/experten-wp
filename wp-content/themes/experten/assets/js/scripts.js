@@ -8242,9 +8242,9 @@ $( document ).ready(function() {
 });
 
 function sentOk(modal) {
-    $(modal).modal('toggle');
+    $(modal).modal('show');
     setTimeout(function(){
-      $(modal).modal('toggle');
+      $(modal).modal('hide');
     }, 3500)
 }
 
