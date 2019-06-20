@@ -8239,13 +8239,14 @@ $( document ).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+});
 
-
-
-
-
-})
-
+function sentOk(modal) {
+    $(modal).modal('toggle');
+    setTimeout(function(){
+      $(modal).modal('toggle');
+    }, 3500)
+}
 
 // form to close after send
 setTimeout(function() {
@@ -8254,21 +8255,27 @@ setTimeout(function() {
     $('.checkbox-label').removeClass('checked');
     $('input[type="checkbox"]').prop('checked', false);
     $('button.close').click();
+    sentOk('#modalSent1');
   }, false );
   var wpcf7Elm1 = document.querySelector( '#wpcf7-f107-o5' );
   wpcf7Elm1.addEventListener( 'wpcf7mailsent', function( event ) {
     $('.checkbox-label').removeClass('checked');
     $('input[type="checkbox"]').prop('checked', false);
     $('button.close').click();
+    sentOk('#modalSent1');
+
   }, false );
   var wpcf7Elm2 = document.querySelector( '#wpcf7-f92-o2' );
   wpcf7Elm2.addEventListener( 'wpcf7mailsent', function( event ) {
     $('.checkbox-label').removeClass('checked');
     $('input[type="checkbox"]').prop('checked', false);
+    sentOk('#modalSent1');
+  }, false );
+  var wpcf7ElmMail = document.querySelector( '#wpcf7-f6-o3' );
+  wpcf7ElmMail.addEventListener( 'wpcf7mailsent', function( event ) {
+    sentOk('#modalSent2');
   }, false );
 }, 1000);
-
-
 
 $(window).scroll(function() {
 

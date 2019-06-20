@@ -14353,4 +14353,10 @@ span.wpcf7-list-item {
     margin-left: 0px;
   }
 }
-
+.sent-mail h2 {
+  color: #fff!important;
+  text-align: center!important;
+}
+.ajax-loader {
+  display: none !important;
+}

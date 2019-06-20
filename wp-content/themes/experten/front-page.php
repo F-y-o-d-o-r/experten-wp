@@ -54,6 +54,9 @@ $formulartitel_berechnen = get_field('formulartitel_berechnen');
 
 $footer_nav = get_field('footer_nav','option' );
 
+$sent_type_1 = get_field('sent_type_1','option' );
+$sent_type_2 = get_field('sent_type_2','option' );
+
 get_header();
 
 ?>
@@ -476,23 +479,32 @@ get_header();
         </div>
     </div>
 
-    <!-- Modals - sent -->
-    <div class="modal calc-form-modal fade" id="modalSent1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modals - sent1 -->
+    <div class="modal calc-form-modal fade sent-mail" id="modalSent1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"></span>
-                </button>
-                <div class="modal-header">
+                <div class="modal-body">
                     <?php
-                    if ($formulartitel_berechnen) { ?>
-                        <h2 class="modal-title" id="exampleModalLabel"><?php echo $formulartitel_berechnen?></h2>
+                    if ($sent_type_1) { ?>
+                        <h2 ><?php echo $sent_type_1?></h2>
                         <?php
                     }
                     ?>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals - sent2 -->
+    <div class="modal calc-form-modal fade sent-mail" id="modalSent2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-body">
-                    <?php echo do_shortcode( '[contact-form-7 id="107" title="Berechnen two"]' ); ?>
+                    <?php
+                    if ($sent_type_2) { ?>
+                        <h2 ><?php echo $sent_type_2?></h2>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
