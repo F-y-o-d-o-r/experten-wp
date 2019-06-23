@@ -12459,7 +12459,13 @@ input[type="submit"] {
     @media (max-width: 768px) {
       .bg-grey:before {
         display: none; } }
-
+.bird-fly {
+  width: 50%!important;
+  margin-left: 40%;
+}
+.bird-ground {
+  margin-top: -50px;
+}
 .text-intro-bg {
   position: relative; }
   .text-intro-bg:after {

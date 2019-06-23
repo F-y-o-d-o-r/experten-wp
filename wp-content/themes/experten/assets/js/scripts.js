@@ -8360,7 +8360,7 @@ $( document ).ready(function() {
 
     translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-    $('.intro-head__img img').css({
+    $('.intro-head__img .bird-fly').css({
       '-webit-transform': translate,
       '-moz-transform': translate,
       'transform': translate

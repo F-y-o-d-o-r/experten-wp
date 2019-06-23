@@ -4,6 +4,7 @@
  */
 
 $foto_block_1 = get_field('foto_block_1');
+$foto_block_2 = get_field('foto_block_2');
 $text_foto_block1 = get_field('text_foto_block1');
 $titel_block_1  = get_field('titel_block_1');
 $subtitle_block_1 = get_field('subtitle_block_1');
@@ -66,7 +67,8 @@ get_header();
             if($foto_block_1) {?>
                 <div class="intro-head__img">
                     <div class="wrapper">
-                        <img alt="main-img" src="<?php echo $foto_block_1 ?>">
+                        <img alt="main-img-2" class="bird-fly" src="<?php echo $foto_block_1 ?>">
+                        <img alt="main-img" class="bird-ground" src="<?php echo $foto_block_2 ?>">
                     </div>
                     <?php
                     if($text_foto_block1) : ?>
