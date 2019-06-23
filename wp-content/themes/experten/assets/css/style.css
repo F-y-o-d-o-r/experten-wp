@@ -1564,7 +1564,7 @@ mark,
           flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  /*background-color: #fff;*/
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -12275,7 +12275,12 @@ div.rs-block {
   z-index: 10;
   background-color: #626262;
 }
-/*626262*/
+@media (max-width: 1024px) {
+  .menu-826 {
+    left: 50.2%;
+  }
+
+}
 /* Global styles */
 @font-face {
   font-family: 'source_sans_proSBdIt';
@@ -13430,7 +13435,7 @@ input[type="checkbox"] {
 
   @media (max-width: 1024px) {
     .btn-primary {
-      padding: 20px 0;
+      padding: 20px 7px 20px 3px;
       font-size: 13px;
       font-weight: 400;
       line-height: 16.79px;
